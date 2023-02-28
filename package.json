@@ -6,6 +6,9 @@
     "start": "expo start --dev-client"
   },
   "dependencies": {
+    "@react-native-firebase/app": "^17.3.1",
+    "@react-native-firebase/crashlytics": "^17.3.1",
+    "@react-native-firebase/perf": "^17.3.1",
     "expo": "~47.0.3",
     "expo-dev-client": "~2.0.0",
     "expo-splash-screen": "~0.17.4",
