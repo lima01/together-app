@@ -1,4 +1,4 @@
-package com.togetherapp.newarchitecture;
+package org.onething.togetherapp.newarchitecture;
 
 import android.app.Application;
 import androidx.annotation.NonNull;
@@ -20,9 +20,9 @@ import com.facebook.react.fabric.EmptyReactNativeConfig;
 import com.facebook.react.fabric.FabricJSIModuleProvider;
 import com.facebook.react.fabric.ReactNativeConfig;
 import com.facebook.react.uimanager.ViewManagerRegistry;
-import com.togetherapp.BuildConfig;
-import com.togetherapp.newarchitecture.components.MainComponentsRegistry;
-import com.togetherapp.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
+import org.onething.togetherapp.BuildConfig;
+import org.onething.togetherapp.newarchitecture.components.MainComponentsRegistry;
+import org.onething.togetherapp.newarchitecture.modules.MainApplicationTurboModuleManagerDelegate;
 import java.util.ArrayList;
 import java.util.List;
 

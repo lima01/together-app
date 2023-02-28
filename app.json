@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "togetherapp",
-    "slug": "togetherapp",
+    "name": "Together App",
+    "slug": "Together App",
     "scheme": "togetherapp",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -19,14 +19,14 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.togetherapp.togetherapp"
+      "bundleIdentifier": "org.onething.togetherapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "package": "com.togetherapp"
+      "package": "org.onething.togetherapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"

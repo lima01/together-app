@@ -1,4 +1,4 @@
-package com.togetherapp;
+package org.onething.togetherapp;
 
 import android.os.Build;
 import android.os.Bundle;

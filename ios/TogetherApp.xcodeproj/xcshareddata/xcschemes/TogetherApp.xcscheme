@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-               BuildableName = "togetherapp.app"
-               BlueprintName = "togetherapp"
-               ReferencedContainer = "container:togetherapp.xcodeproj">
+               BuildableName = "TogetherApp.app"
+               BlueprintName = "TogetherApp"
+               ReferencedContainer = "container:TogetherApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "00E356ED1AD99517003FC87E"
-               BuildableName = "togetherappTests.xctest"
-               BlueprintName = "togetherappTests"
-               ReferencedContainer = "container:togetherapp.xcodeproj">
+               BuildableName = "TogetherAppTests.xctest"
+               BlueprintName = "TogetherAppTests"
+               ReferencedContainer = "container:TogetherApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "togetherapp.app"
-            BlueprintName = "togetherapp"
-            ReferencedContainer = "container:togetherapp.xcodeproj">
+            BuildableName = "TogetherApp.app"
+            BlueprintName = "TogetherApp"
+            ReferencedContainer = "container:TogetherApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "13B07F861A680F5B00A75B9A"
-            BuildableName = "togetherapp.app"
-            BlueprintName = "togetherapp"
-            ReferencedContainer = "container:togetherapp.xcodeproj">
+            BuildableName = "TogetherApp.app"
+            BlueprintName = "TogetherApp"
+            ReferencedContainer = "container:TogetherApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
