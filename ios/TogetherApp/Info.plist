@@ -26,7 +26,13 @@
         <key>CFBundleURLSchemes</key>
         <array>
           <string>togetherapp</string>
-          <string>com.togetherapp.togetherapp</string>
+          <string>org.onething.togetherapp</string>
+        </array>
+      </dict>
+      <dict>
+        <key>CFBundleURLSchemes</key>
+        <array>
+          <string>com.googleusercontent.apps.101131758817-7daljfelqlfmqc6743cfujohba8i7vt7</string>
         </array>
       </dict>
       <dict>
