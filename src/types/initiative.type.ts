@@ -70,7 +70,7 @@ export interface IInitiativeData {
   featured?: boolean,
   //free style strings about the initiative, such as 'must be 18+', 'need to fill up application', etc.
   things_to_know? : string[], 
-  statistics: IStatistics
+  statistics? : IStatistics
 }
 
 // Model initiatives liked by users
