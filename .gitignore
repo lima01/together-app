@@ -20,3 +20,4 @@ GoogleService-Info.plist
 google-services.json
 firestore-debug.log
 ui-debug.log
+saved_data
