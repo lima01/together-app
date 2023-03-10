@@ -21,3 +21,4 @@ google-services.json
 firestore-debug.log
 ui-debug.log
 saved_data
+firebase-debug.log
