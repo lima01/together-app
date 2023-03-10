@@ -1,5 +1,6 @@
 import { mockFirebase } from 'firestore-jest-mock';
-import { mockCollection } from 'firestore-jest-mock/mocks/firestore';
+import { mockAdd, mockCollection } from 'firestore-jest-mock/mocks/firestore';
+import { IInitiativeData, InitiativeType } from '../types/initiative.type';
 
 mockFirebase({
   database: {
@@ -26,22 +27,39 @@ mockFirebase({
 
 import initiativeService from './initiative.service';
 
-test('test get by id found', async () => {
-  const initiativeData = await initiativeService.get("1");
-  expect(mockCollection).toHaveBeenCalledWith('initiatives');
-  expect(initiativeData).toEqual(
-    {
-      id: "1",
-      img: "assets/events/vote.png",
-      name: "Let's Vote Campaign",
-      dateRange: "7/24 - 11/9",
-      fav: false,
-    }
-  );
-});
+describe("InitiativeService Tests", () => {
+  test('test get by id found', async () => {
+    const initiativeData = await initiativeService.get("1");
+    expect(mockCollection).toHaveBeenCalledWith('initiatives');
+    expect(initiativeData).toEqual(
+      {
+        id: "1",
+        img: "assets/events/vote.png",
+        name: "Let's Vote Campaign",
+        dateRange: "7/24 - 11/9",
+        fav: false,
+      }
+    );
+  });
 
-test('test get by id not found', async () => {
-  const initiativeData = await initiativeService.get("123");
-  expect(mockCollection).toHaveBeenCalledWith('initiatives');
-  expect(initiativeData).toBeNull();
-});
+  test('test get by id not found', async () => {
+    const initiativeData = await initiativeService.get("123");
+    expect(mockCollection).toHaveBeenCalledWith('initiatives');
+    expect(initiativeData).toBeNull();
+  });
+  
+  test('test create initiative', async ()=>{
+    const newInitiative: IInitiativeData = {
+      name: "Let's Vote Campaign",
+      admins: [], //user id of all admins of the initiative
+      created_by: "me", //user id of creator
+      create_time: new Date(),
+      date_range: "123-456",
+      type: InitiativeType.in_person,
+      description: "test initiative",
+    };
+    const newDocId = await initiativeService.create(newInitiative);
+    expect(mockAdd).toHaveBeenCalledWith(newInitiative);
+    expect(newDocId).not.toBeNull();
+  })
+})
